@@ -1,0 +1,20 @@
+ 
+<h1>Process</h1>
+
+<form method="POST" action="/apProcess" enctype="multipart/form-data">
+
+    <input type="text" name="fName" value="{{applicant.fName}}" readonly> <br>
+    
+    <input type="text" name="lName"  value="{{applicant.lName}}" readonly> <br>
+    
+    <input type="text" name="email"  value="{{applicant.email}}" readonly> <br>
+    
+    <input type="text" name="age"  placeholder="Age in Numbers" required> <br>
+
+    <textarea name="address" id="" cols="30" rows="10" placeholder="Address" required></textarea>
+        
+    <input type="file" name="apImage" placeholder="Choose Image"> <br>
+
+    <button>Send Application</button>
+    
+</form>

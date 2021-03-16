@@ -1,0 +1,38 @@
+<h1>Profile for {{process.fName}} {{process.lName}}</h1>
+
+<a href="/reviewer/appList"><button> Back</button></a>
+
+<br>
+<br>
+<br>
+
+
+
+<form method="POST" action="/reviewer/apProfile">
+        <img src="/images/{{process.apImage}}" alt="" width="60px" height="100px" style="border-radius:6px;"><br><br>
+
+    <label for="fName">Fullname</label>
+    <input type="text" name="fName" value="{{process.fName}}" readonly> <br>
+    
+    <label for="lName">Last Name</label>
+    <input type="text" name="lName"  value="{{process.lName}}" readonly> <br>
+    
+    <label for="email">Email</label>
+    <input type="text" name="email"  value="{{process.email}}" readonly> <br>
+    
+    <label for="age">Age</label>
+    <input type="text" name="age"  value="{{process.age}}" readonly> <br>
+
+    <label for="">Address</label>
+        <input type="text" name="address"  value="{{process.address}}" readonly> <br>
+
+    <Address><h3> {{process.address}}</h3> </Address>
+
+    <label for="reviewer">Reviewer Username</label>
+   <input type="text" name="revUsername"  value="{{reviewer.username}}" readonly> <br>
+
+
+        <button>Process License</button>
+    
+</form>
+

@@ -1,0 +1,14 @@
+
+
+
+<ul>
+    <li>welcome, {{applicant.fName}}</li>
+    {{#if applicant}}
+    <li><a href="/userauth/apLogout">Logout</a></li>
+    {{else}}
+    <li><a href="/userauth/apLogin">Login</a></li>
+    <li><a href="/userauth/apregister">Register</a></li>
+    {{/if }}
+</ul>
+
+<a href="/approcess">process</a>

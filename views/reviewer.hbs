@@ -1,0 +1,17 @@
+
+
+<ul>
+    <li>welcome, {{reviewer.fName}}</li>
+    {{#if reviewer}}
+    <li><a href="/reviewer/revLogout">Logout</a></li>
+    {{else}}
+    <li><a href="/reviewer/revLogin">Login</a></li>
+    <li><a href="/reviewer/revregister">Register</a></li>
+    {{/if }}
+</ul>
+
+<a href="/reviewer/applist"><button>All Applicants</button> </a>
+<a href="/reviewer/myTreats"><button>My Treats</button> </a>
+
+
+
